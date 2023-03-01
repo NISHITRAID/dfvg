@@ -165,10 +165,7 @@ const handleSubmit = async (e,salt) => {
   if (response.ok) {
       const data = await response.json();
       const parsedData = data.bot.trim() // trims any trailing spaces/'\n' 
-     // chatContainer=parsedData;
-      // ctx.font = "32px serif";
-     // ctx.fillText(parsedData, 20, 50);
-    // op.innerHTML=parsedData;
+    console.log(parsedData);
      typeText(op, parsedData)
       // drawer(parsedData);
   } else {
